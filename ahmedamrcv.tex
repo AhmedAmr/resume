@@ -20,179 +20,236 @@
 %% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 %% SOFTWARE.
 
-%% Resume Version: 1
+%% Resume Version: 2
 
 \documentclass[]{ahmedamrcv}
 
 % For mathematical symbols
 \usepackage{amsmath}
 
+% For coloring
+\usepackage{xcolor}
+
+% For adding hyberlinks
+\usepackage{hyperref}
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+
 % Header info
 \name{Ahmed Amr Abdulfattah}
-\address{Linkedin: ahmedamron \linebreak Github: ahmedamron \linebreak UVa: AhmedAmrOn}
-\contacts{Egypt: +21155128882 \linebreak ahmedamron@gmail.com \linebreak}
+\address{Linkedin:\href{https://www.linkedin.com/in/ahmedamron}{ahmedamron} \linebreak Github: \href{https://github.com/AhmedAmr}{ahmedamron} \linebreak UVa: \href{https://uhunt.onlinejudge.org/id/223084}{AhmedAmrOn}}
+\contacts{+201155128882 \linebreak \href{mailto:ahmedamron@gmail.com}{ahmedamron@gmail.com} \linebreak Open to Relocation}
 
 \begin{document}
 
 	% Print the header
 	\makeheader
-	
-	% Print the content
-	\begin{cvsection}{Employment}
-		\begin{cvsubsection}{Senior Python/Data Engineer}{Opinov8/EnergyAspects (Ukraine/UK)}{April 2021 -- Now}
+
+        % =========================== Summary Section Start ===========================
+        % \begin{cvsection}{Summary}
+        % a Staff Data Engineer with eight years of experience working on global enterprise products/initiatives across US/UK companies. led this.., revamped that..and implemented this.
+        % \newline
+        % Currently seeking an opportunity in a global tech organization where I can have a huge impact and take my skills to the next level. 
+        % \end{cvsection}
+    
+        \begin{cvsection}{Summary}    
+        a Staff Data Engineer with 12+ years of coding experience, and 8+ years of professional experience, significantly contributed to over 10 major initiatives focused on developing robust data infrastructures for global enterprise products in the US, UK, and Europe.
+        \newline
+        My experience allowed me to excel in creating scalable and efficient data architectures, directly impacting the operational capabilities of firms like EnergyAspects, Incorta, and InsideTrack. Among my achievements, centralizing org-wide analytical models, architecting a comprehensive real-time data infrastructure for a distributed social network, and building scalable data providing APIs stand out as testaments to my ability to innovate and implementing software solutions. 
+        \newline
+        Seeking a position in a global enterprise tech organization where I can leverage my proven track record in software/data engineering to foster significant growth, further develop my leadership and technical skills, and contribute to groundbreaking projects that resonate on a global scale
+        \end{cvsection}
+
+        \begin{cvsection}{Skills}
+		\begin{cvsubsection}{}{}{}	
 			\begin{itemize}
-				\item Lead development of the following areas:
-				\begin{itemize}
-					\item Redesigning legacy infrastructures and improving data architecture.
-					\item Build a centralized data warehouse and pipelines to collect and process data using dbt from numerous sources and provide daily actionable insights.
-					\item Architect, implement, and maintain core internal APIs for data modeling using FastAPI, CloudBuild, Cloud Firestore, Artifact Registry, and Cloud Run Services/Jobs).
-					\item Architect, implement, and maintain core public APIs for data delivery.
-					\item Implement and maintain several ETL processes to relational dbs/time-series dbs.
-					\item Improve data engineering best practices, including code reviews, quality monitoring, and knowledge sharing.
-					\item Creating and deploying org-wide dash app templates along with Auth0 integration.
-					\item Performing Environment/DAGs migration (prior/post) Cloud Composer/Airflow upgrades.
-					\item Building data-related CI/CD pipelines using (Cloud Build/ Github Actions)
-				\end{itemize}
+				\item \textbf{Programming Languages} Python, Java, JavaScript, Haskell, and C
+                    \item \textbf{Databases} PostgreSQL, Shooju, Redis, MongoDB, Memgraph, AWS Document DB, Pinecone
+                    \item \textbf{Data Warehouses} Snowflake, BigQuery, AWS Redshift 
+				\item \textbf{Google Cloud (GCP)} Artifact Registry, BigQuery, Build, Cloud Functions, Cloud Run, Composer, Compute, Data Studio, Firestore, Kubernetes Engine, Pub/Sub, Secret Manager, SQL, Storage
+                    \item \textbf{Amazon Web Services (AWS)} Athena, CloudWatch, Database Migration, Document DB, EC2, ElastiCache, Forecast, Glue, Glue DataBrew, IoT Core, Lambda, Lightsail, OpenSearch, RDS, S3, SageMaker
+				\item \textbf{Deployment/CI/CD} CircleCI, Cloud Build, Docker, Github Actions, Kubernetes, Liquibase, terraform, Doppler, Unix/Linux
+				\item \textbf{Data} Dremio, Hadoop, Spark, Tableau, data build tool(dbt), dimensional modeling, Stitch, Fivetran, Apache Kafka, Apache Airflow, FastAPI
+			\end{itemize}
+		\end{cvsubsection}
+        \end{cvsection}
+        
+        % =========================== Summary Section End ===========================
+
+        % ================ Professional Experience Section Start ====================
+	\begin{cvsection}{Professional Experience}
+            \begin{cvsubsection}{Staff Data Engineer}{Rubikal (Clutch B2B Leader)}{Jan 2022 -- Now}
+            Directed the entire data architecture, development, and stakeholder engagement for 6 key initiatives in 2 key UK/US partnerships, enhancing their team capabilities through strategic team augmentation
+
+                \begin{cvsubsection}{1. EnergyAspects}{(\$61M/y Energy Research Firm)}{(London)(Remote)}
+    			\begin{itemize}
+                        \item Centralized BigQuery analytics with dbt, improving data accessibility and consistency across multiple sources.
+        
+                        \item Streamlined internal APIs into a scalable, centralized API using Python and Cloud Services, enhancing system integration and scalability.
+                            
+                        \item Processed 25TB of Spire weather data into Shooju using Docker and AWS, enabling efficient data analysis.
+                            
+                        \item Developed scalable Models API for on-demand model processing, facilitating dynamic utilization.
+                            
+                        \item Maintained Composer Airflow Environment, resolving issues and performing upgrades for optimal workflow efficiency.
+                            
+                        \item Redesigned legacy infrastructure and enhanced data architecture, building a centralized data warehouse for daily insights.
+                            
+                        \item Implemented core internal and public APIs for data modeling and delivery, using FastAPI and Cloud Services.
+                            
+                        \item Automated multiple ETL processes to relational and time-series databases, streamlining data processing.
+                            
+                        \item Improved data engineering practices with mandatory code reviews and quality checks, fostering a culture of excellence.
+
+                        \item Created and deployed org-wide dash app templates with Auth0 integration, enhancing app accessibility and security.
+
+                        \item Managed environment and DAGs migration during Cloud Composer/Airflow upgrades, ensuring smooth transitions.
+
+                        \item Built data-related CI/CD pipelines with Cloud Build and GitHub Actions, streamlining deployment and quality control
+    			\end{itemize}
+    		\end{cvsubsection}
+    
+                \begin{cvsubsection}{2. Akawin}{(Distributed Social Network)}{(Oregon)(Remote)}
+    			\begin{itemize}
+    				\item Solely architected and built real-time data infrasturcture that collects data from a distributed social network following nostr protocol then integrate into GraphDB, AWS DocumentDB, ElasticSearch, and AWS ElastiCache.
+                        \item Engaged in comprehensive project planning, establishing and meeting critical deadlines within a highly constrained timeline.
+                        \item Coordinated meetings with stakeholders to ensure project alignment with business objectives.
+    			\end{itemize}
+    		\end{cvsubsection}
+            \end{cvsubsection}
+
+            \centering\rule{300pt}{0.4pt}
+            
+            \begin{cvsubsection}{Lead Data Engineer}{Rubikal (Linkedin Top Startup)}{Jan 2020 -- Jan 2022}
+                \begin{cvsubsection}{1. InsideTrack}{(\$54M/y US EdTech Leader)}{(Oregon)(Remote)}
+                    \begin{itemize}
+    				\item Maintained our internal outsourced ETL tool (Pemi), enhancing efficiency through Python, Pandas, and Pytest.
+                        \item Developed ETL pipelines to process data from over 40 US universities at varying frequencies, integrating with UCoach data, and distributed to 5 microservices via Python, Pandas, Pemi, SQL, and SFTP, significantly improving data consolidation and accessibility.
+                        \item Oversaw real-time syncing tools utilizing Fivetran, Stitch, and Alooma, ensuring seamless data integration.
+                        \item Created dimensional models in the dbt Data Warehouse, employing AWS Redshift, Snowflake, and dbt to enhance data analysis capabilities.
+                        \item Managed InsideTrack’s Internal Workflow Manager/Scheduler, optimizing internal operations.
+                        \item Upgraded data deployment infrastructure using CircleCI, Kubernetes, Docker, and Ansible, bolstering deployment efficiency.
+                        \item Established Quarterly Team OKRs, aligning team efforts with strategic goals.
+                    \end{itemize}
+                \end{cvsubsection}
+                
+                \begin{cvsubsection}{2. Concentrical}{(EdTech)}{(Oregon)(Remote)}
+    			\begin{itemize}
+    				\item Played a pivotal role in the division of the company's data infrastructure into two distinct entities, InsideTrack and Concentrical, while simultaneously providing comprehensive support across product development and management tasks.
+    				\item Architected, implemented data deletion service RESTful APIs of five microservices and other AWS resources/backups, ensuring compliance with data privacy regulations.
+    			\end{itemize}
+    		\end{cvsubsection}
+            
+            \end{cvsubsection}
+
+            \centering\rule{300pt}{0.4pt}
+            
+            \begin{cvsubsection}{Senior Software/Data Engineer}{Rubikal (Consultancy)}{Aug 2018 -- Jan 2020}
+
+            \begin{cvsubsection}{1. Endless Studios}{(EdTech/Game Development)}{(Arizona)(Remote)}	
+			\begin{itemize}
+				\item Architected, implemented all ETL data pipelines targeting sources like Google Analytics, Firestore, Google Tag Manager, and PostgreSQL to Google BigQuery using Python, pandas, docker, Compute Engine, and Cloud Storage.
+				\item Developed 20\% of dimensional models using dbt in BigQuery.
+				\item Constructed the entirety of CI/CD pipelines and cloud scripts, automating code releases and data warehouse model updates.
 			\end{itemize}
 		\end{cvsubsection}
 
-		\begin{cvsubsection}{Lead Data Engineer}{Akawin (US)}{May 2023 -- Sep 2023}
+		\begin{cvsubsection}{2. IMAGO Images}{(Global Content Provider)}{(Berlin)(Remote)}	
 			\begin{itemize}
-				\item Built real-time ETL data pipelines that collect data from a distributed social network following nostr protocol then integrate with GraphDB, AWS DocumentDB, ElasticSearch, and AWS ElastiCache.
+				\item Developed an optimized data processing product that uses FFMPEG to process videos and generate a watermarked set of videos with different resolutions.
 			\end{itemize}
 		\end{cvsubsection}
 
-		\begin{cvsubsection}{Lead Data Engineer}{Concentrical (US)}{Jan 2022 -- Jun 2022}
+		\begin{cvsubsection}{3. College Confidential}{(World's Largest College Forum)}{(Oregon)(Remote)}	
 			\begin{itemize}
-				\item Lead Migration of Data Platform and Separation of ITK and Concentrical
-				\item Architecting/Implementing data deletion endpoints to delete org-level data from all five internal microservices databases/systems + any AWS resources/backups.
+				\item Led development of forums tagging project by tagging 1.5M posts with college/university/educational institutions name tags based on content.
+                    \item Engineered ETL processes to construct a global index of universities and college name synonyms, leveraging web crawling techniques and consolidating data within PostgreSQL databases.
 			\end{itemize}
 		\end{cvsubsection}
 
-		\begin{cvsubsection}{Lead Data Engineer}{InsideTrack (US)}{Aug 2018 -- Jan 2022}
+		\begin{cvsubsection}{4. Benchmarq}{(Business Intelligence and AI)}{(Washington)(Remote)}	
 			\begin{itemize}
-				\item Leading Development/Maintenance of the Data Infrastructure behind uCoach app which includes:
-				\begin{itemize}
-					\item ETL Pipelines responsible for ingesting data from 40+ US Universities with different frequencies, transform to consolidate, then load into uCoach Microservices.
-					\item Passback Jobs: Extracts from DW (Both AWS Redshift, then later Snowflake) data sent back to clients.
-					\item Workflows Orchestration Internal Manager.
-					\item Internal ETL tool (https://github.com/inside-track/pemi) (Currently outsourced)
-					\item Real-time syncing tools (Fivetran, Stitch, and previously Alooma)
-					\item Data Warehouse Modeling, dbt jobs
-					\item Setting Team OKRs.
-				\end{itemize}
+				\item Orchestrated ETL processes for data sources (GDELT v1/v2, XSub, QoG, SENDAI), building a data lake with tools including Python, AWS Glue, AWS Athena, PySpark, and AWS EMR.
+				\item Developed time-series forecasting models with Amazon Forecast, enhancing predictive capabilities.
 			\end{itemize}
 		\end{cvsubsection}
+            
+            \end{cvsubsection}
+            
 
-		\begin{cvsubsection}{Staff Data/Analytics Engineer}{Rubikal}{Summer 2018 -- Now}
-			\begin{itemize}
-				\item Leading the Data Engineering/Analytics teams for all of client's projects.
-				\item Growing the data engineering team technical and personal aspects.
-			\end{itemize}
-		\end{cvsubsection}
-		
-		\begin{cvsubsection}{Lead Data Engineer}{Endless Studios}{April 2021 -- Jul 2021}	
-			\begin{itemize}
-				\item Architecting/Building a customized data engineering pipeline to ETL data from different sources into Google BigQuery.
-				\item Help building refreshable DW analytical models (Data Marts).
-				\item Automating the whole ETL process/DW refresh process.
-			\end{itemize}
-		\end{cvsubsection}
+            \centering\rule{300pt}{0.4pt}
 
-		\begin{cvsubsection}{Senior Software Engineer}{IMAGO (Germany)}{Dec 2020 -- Feb 2021}	
-			\begin{itemize}
-				\item Developed a cross-platform scripts that uses FFMPEG to process videos and generate a watermarked set of videos with different resolutions.
-			\end{itemize}
-		\end{cvsubsection}
+            \begin{cvsubsection}{Data Engineer}{BADR (Software Consultancy)}{Jun 2017 -- Aug 2018}
+                \begin{itemize}
+                    \item Originated, project-managed, and developed a product analyzing Wuzzuf(LinkedIn like) job posts, serving both recruiters and job seekers by:
+                    \begin{itemize}
+                        \item Unveiling essential skills per job title to streamline hiring processes and assist in crafting job descriptions.
+                        \item Identifying current market-demanded skills for active job positions, enhancing job search strategies.
+                    \end{itemize}
+                    \item Collaborated closely with leadership to align product features with strategic goals, ensuring successful implementation and market relevance.
+                \end{itemize}
 
-		\begin{cvsubsection}{Senior Software Engineer}{College Confidential (US)}{Dec 2020 -- Feb 2021}	
+            \end{cvsubsection}
+            \centering\rule{300pt}{0.4pt}
+            \begin{cvsubsection}{Full-Stack Software Engineer}{BADR (Software Consultancy)}{Mar 2017 -- Jun 2017}
+            \begin{cvsubsection}{1. Incorta}{(\$54.8M/y Data Platform)}{(Silicon Valley)(Remote)}
 			\begin{itemize}
-				\item Lead development of forums tagging project by tagging 1.5M posts with college/university/educational institutions name tags based on content.
+				\item Spearheaded the development of a novel visualization library using d3.js as the sole engineer, initiating a project that led to the replacement of Tableau and integrating with a cross-functional team to maintain leadership across key development phases.
+                    \item Drove 60\% of the development and pioneered 90\% of the advanced features of the visualization library, significantly contributing to an estimated \$100K/year reduction in operational costs.
+                    \item Adapted to challenging requirements changes mid-project, seamlessly delivering new product features under evolving conditions.
 			\end{itemize}
 		\end{cvsubsection}
+            \begin{cvsubsection}{2. WhoKnows}{(AI-Powered Lead Generation)}{(Silicon Valley)(Remote)}
+			\begin{itemize}
+				\item Revamped six complex report pages by creating all necessary data providing RESTful endpoints under a tight deadline.
+                    \item Inherited leadership and project management roles mid-project due to the long medical unavailability of the team lead and project manager, ensuring project continuity.
+                    \item Conducted client meetings, led team code reviews, and made critical delivery decisions to maintain project momentum.
+                    \item Delivered the entire project with positive feedback from the client, demonstrating adaptability and leadership in challenging circumstances.
+			\end{itemize}
+		\end{cvsubsection}
+            \begin{cvsubsection}{3. Elite HRV}{(\$14.3M Funded Health Startup)}{(North Carolina)(Remote)}
+			\begin{itemize}
+				\item Implemented tagging feature, and breathing options to a cross-platform mobile app using ionic.
+			\end{itemize}
+		\end{cvsubsection}
+            \end{cvsubsection}
+            
+            \centering\rule{300pt}{0.4pt}
 
-		\begin{cvsubsection}{Senior Software Engineer}{Benchmarq (US)}{Dec 2020 -- Feb 2021}	
-			\begin{itemize}
-				\item Architecting data infrastructure to support timeseries forecasting.
-				\item Performing ETL for sources like (GDELT (https://www.gdeltproject.org/), and internal relation databases etc..)
-				\item Training models in AWS Amazon Forecast for forecasting of events.
-			\end{itemize}
-		\end{cvsubsection}
-		
-		\begin{cvsubsection}{Teaching Assistant}{AAST (CS Department)}{Feb 2017 -- Aug 2019}
+            \begin{cvsubsection}{University Teaching Assistant}{AAST (CS Department)}{Feb 2017 -- Aug 2019}
 			\begin{itemize}
 				\item Taught on-campus courses of Computing Algorithms, OOP, and Data Visualization
 			\end{itemize}
 		\end{cvsubsection}
-		
-		\begin{cvsubsection}{Data Engineer}{BADR}{Mar 2017 -- Jun 2017}
-			\begin{itemize}
-				\item Implemented a product that analyses Wuzzuf job posts for:
-				\begin{itemize}
-					\item Recruiters: to reveal needed skills per job title to hire for, and help recruiters write job descriptions.
-					\item Job Seekers: to reveal needed skills of active jobs current market hire for
-				\end{itemize}
-			\end{itemize}
-		\end{cvsubsection}
-
-		\begin{cvsubsection}{Software Engineer}{Incorta}{Mar 2016 -- Dec 2016}
-			\begin{itemize}
-				\item Implemented a d3.js visualization library that contains the following graphs (Horizontal Bar Chart, Vertical Bar Chart, Line Chart, Line Bar Chart, Stacked Bar Chart, Grouped Bar Chart, Area chart, Spider Chart, Bubble Chart, Heatmap Chart, Scatter plots, Bubble Map Chart, Geo Maps).
-			\end{itemize}
-		\end{cvsubsection}
-
-
-		\begin{cvsubsection}{Software Engineer}{WhoKnows (US)}{Dec 2016 -- Mar 2017}
-			\begin{itemize}
-				\item Project Scope: Implement and Integrate six pages with 30 Charts into WhoKnows web app
-				\begin{itemize}
-					\item Implemented SQL queries to provide data per graph.
-					\item Implemented RESTful APIs to return data needed per graph.
-					\item Used Angular.js and angular-nvd3 to implement some of the charts in the frontend.
-				\end{itemize}
-				
-			\end{itemize}
-		\end{cvsubsection}
-
-		\begin{cvsubsection}{Software Engineer}{Elite HRV (US)}{Jul 2016 -- Sep 2016}
-			\begin{itemize}
-				\item Implemented a couple of features like adding tagging features, and adding breathing options to their cross-platform mobile app using ionic.
-			\end{itemize}
-		\end{cvsubsection}
-
 	\end{cvsection}
-	
+	% ================ Professional Experience Section End ====================
+ 
+        % ==================== Education Section Start ============================
 	\begin{cvsection}{Education}
-		\begin{cvsubsection}{Alexandria, EG}{Alexandria University}{2010 -- 2015}
+		\begin{cvsubsection}{B.S in Computer Engineering}{Alexandria University, Egypt}{2010 -- 2015}
 			\begin{itemize}
-				\item B.S in Computer and Systems Engineering.
+                    \item A top 4\% university globally in QS ranking.
 				\item Undergraduate Coursework: Operating Systems; Databases; Algorithms; Programming Languages; Comp. Architecture; Systems Programming; Computer Vision.
-			\end{itemize}
+                    \item \textbf{College Projects}:
+                        \begin{itemize}
+            			\item \textbf{\textit{Wikipedia Daily Hot Topics}}. App shows top N topics visited. (Python, Hadoop, JS)
+        				\item \textbf{\textit{Distributed Multi-Agent Classifier}}. Classify items based on collected data by agents from multiple distributed locations. (Java, JADE)
+        				\item \textbf{\textit{Twitter Sentiment Analysis}}. An app that infers the sentiment of tweets. (Python, Machine Learning, JS)
+        				\item \textbf{\textit{XO Game with AI Using Assembly}}. XO game with MinMax algorithm. (X86 Assembly)
+    			     \end{itemize}
+                \end{itemize}
 		\end{cvsubsection}
+        \begin{cvsection}{Awards}
+            \begin{cvsubsection}{}{}{}
+            \begin{itemize}
+                \item \textbf{Google Hall of Fame}: for a successful report of a security bug in Google BigQuery that allowed unauthorized users to drop datasets.
+            \end{itemize}
+            \end{cvsubsection}
+            \end{cvsection}
 	\end{cvsection}
-	
-	\begin{cvsection}{Side Projects}
-		\begin{cvsubsection}{}{}{}
-			\begin{itemize}
-    			\item \textbf{Wikipedia Daily Hot Topics}. App shows top N topics visited. (Python, Hadoop, JS)
-				\item \textbf{Distributed Multi-Agent Classifier}. Classify items based on collected data by agents from multiple distributed locations. (Java, JADE)
-				\item \textbf{Twitter Sentiment Analysis}. App that infers sentiment of tweets. (Python, Machine Learning, JS)
-				\item \textbf{XO Game with AI Using Assembly }. XO game with MinMax algorithm. (X86 Assembly)
-			\end{itemize}
-		\end{cvsubsection}
-	\end{cvsection}
-	
+	% ==================== Education Section End ============================
+       
 
-	\begin{cvsection}{Languages and Technologies}
-		\begin{cvsubsection}{}{}{}	
-			\begin{itemize}
-				\item \textbf{Languages} Python, Java, JavaScript and C
-				\item \textbf{Databases}  Relational DBs, NoSQL DBs, and Timeseries DBs
-				\item \textbf{Cloud Services}  Google Cloud and AWS
-				\item \textbf{Deployment/CI/CD}  Docker, K8s, CircleCI, Github Actions, terraform and CloudBuild
-				\item \textbf{Data Related}  Hadoop, Spark, Redshift, Snowflake, Tableau
-				\item \textbf{Concepts}  Microservices, Machine Learning, and Leadership
-			\end{itemize}
-		\end{cvsubsection}
-	\end{cvsection}
 \end{document}
